@@ -25,7 +25,7 @@
 
               <form method="post" enctype="multipart/form-data" class="analysis-form">
     <h2 class="form-title">Text Input</h2>
-    <textarea class="form-control input-text" name="input_text" placeholder="Paste or type your text here..." id="inputText"><?php echo isset($_POST['input_text']) ? htmlspecialchars($_POST['input_text']) : ''; ?></textarea>
+    <textarea class="form-control input-text" name="input_text" placeholder="Paste or type your text here..." id="inputText"></textarea>
     <div class="button-section">
         <button type="button" class="action-button btn btn-primary" id="clearButton">Clear</button>
         <button type="button" class="action-button btn btn-primary" id="copyButton">Copy</button>
@@ -38,7 +38,7 @@
 
     <div class="input-section">
         <div class="input-box">
-            <input type="text" name="url" placeholder="Enter URL to analyze" value="<?php echo isset($_POST['url']) ? htmlspecialchars($_POST['url']) : ''; ?>" class="input-url">
+            <input type="text" name="url" placeholder="Enter URL to analyze"  class="input-url">
         </div>
         <div class="input-box">
             <input type="file" name="uploaded_file" class="input-file">
@@ -76,7 +76,7 @@
     </div>
 
 
-            <div class="analysis-results">
+            <!-- <div class="analysis-results">
                 <?php
                 if (isset($_POST['analyze_text'])) {
                     include 'text_analysis.php';
@@ -114,7 +114,7 @@
         echo "<p>Estimated speaking time: $speakingTime minutes</p>";
                 ?>
               
-            </div>
+            </div> -->
 </main>
 
 
